@@ -87,7 +87,7 @@ export default function Hero({ isDark, toggleDark }) {
           />
           <div className="w-200 h-150 md:w-[20rem] md:h-[32rem] rounded-full overflow-hidden flex items-center justify-center relative z-10 group">
             <video
-              src="/Public/Video.webm"
+              src="/Video.webm"
               autoPlay
               loop
               muted
