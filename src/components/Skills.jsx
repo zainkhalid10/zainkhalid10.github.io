@@ -27,9 +27,9 @@ const skillCategories = [
   {
     label: 'Video Creation',
     skills: [
-      { type: 'img', src: 'Public/pp.png', alt: 'Premiere Pro' },
-      { type: 'img', src: 'Public/Davinci.png', alt: 'DaVinci Resolve' },
-      { type: 'img', src: 'Public/cc.png', alt: 'Cap CutR' },
+      { type: 'img', src: 'pp.png', alt: 'Premiere Pro' },
+      { type: 'img', src: 'Davinci.png', alt: 'DaVinci Resolve' },
+      { type: 'img', src: 'cc.png', alt: 'Cap CutR' },
     ],
   },
   {
