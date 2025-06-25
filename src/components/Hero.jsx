@@ -86,8 +86,8 @@ export default function Hero({ isDark, toggleDark }) {
             transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
           />
           <div className="w-200 h-150 md:w-[20rem] md:h-[32rem] rounded-full overflow-hidden flex items-center justify-center relative z-10 group">
-            <video
-              <img src="/Video.gif" alt="Hero GIF" />
+            
+              <img src="/Video.gif" alt="Hero GIF" 
               autoPlay
               loop
               muted
