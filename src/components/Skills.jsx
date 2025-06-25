@@ -26,7 +26,11 @@ const skillCategories = [
   },
   {
     label: 'Video Creation',
-    skills: [FaVideo, FaVideo, FaVideo, FaVideo],
+    skills: [
+      { type: 'img', src: 'Public/pp.png', alt: 'Premiere Pro' },
+      { type: 'img', src: 'Public/Davinci.png', alt: 'DaVinci Resolve' },
+      { type: 'img', src: 'Public/cc.png', alt: 'Cap CutR' },
+    ],
   },
   {
     label: 'Databases & BaaS',
@@ -79,7 +83,11 @@ export default function Skills({ isDark }) {
                       className="text-2xl md:text-3xl text-blue-200 hover:text-blue-400 transition-colors duration-200 hover:scale-125 cursor-pointer drop-shadow-lg"
                       tabIndex={0}
                     >
-                      <Icon />
+                      {typeof Icon === 'object' && Icon.type === 'img' ? (
+                        <img src={Icon.src} alt={Icon.alt} className="w-8 h-8 md:w-12 md:h-12 object-contain inline" />
+                      ) : (
+                        <Icon />
+                      )}
                     </span>
                   ))}
                 </div>
